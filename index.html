@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Front-end-Boilerplate</title>
+    <title>Murillo Camargo - Creative Front-end Developer</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,41 +13,56 @@
     <!-- build:css assets/css/frontend.min.css -->
     <!-- bower:css -->
     <!-- endbower -->
+    <link rel="stylesheet" href="assets/vendor/fullpage.css">
+    <link rel="stylesheet" href="assets/vendor/style.css">
+    <link rel="stylesheet" href="assets/vendor/animation.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <!-- endbuild -->
     <script src="assets/vendor/modernizr.js"></script>
 </head>
 <body>
 
-<div id="wrap">
+<div class="header">
+    <nav class="main-nav">
+        <ul>
+            <li data-menuanchor="firstSection">
+                <a href="#firstSection">Me</a>
+            </li>
+            <li data-menuanchor="secondSection">
+                <a href="#secondSection">Works</a>
+            </li>
+            <li data-menuanchor="thirdSection">
+                <a href="#thirdSection">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</div>
 
-    <!-- CONTEÚDO AQUI -->
+<div id="fullpage">
 
-    <div class="jumbotron">
-        <div class="container">
-            <h1>Front-end-Boilerplate</h1>
-
-            <p>Developed by Murillo Camargo (<a href="mailto:contato@murillocamargo.com.br">contato@murillocamargo.com.br</a>)</p>
-
-            <p><a class="btn btn-primary btn-lg" href="http://www.murillocamargo.com.br" target="_blank" role="button">Visit my website</a></p>
-        </div>
+    <div class="section section-one">
+        <h2>Hi :)</h2>
+        <p>I'm a brazilian Front-end Developer currently living in Vancouver</p>
     </div>
 
-</div>
-<!-- /#wrap -->
+    <div class="section section-two">
 
-<div id="footer">
-
-    <div class="container">
-        <div class="row">
-
-            <h3 class="text-center" style="color: #FFF; margin-top: 15px">Footer</h3>
-
+        <div class="slide slide-one">
+            <h2>Here are some of my latest works</h2>
+            <p><a href="https://negociarias.com.br/" target="_blank">Negociarias (Media Website)</a></p>
+            <p><a href="http://www.liminha.com.br/en/" target="_blank">Liminha (Music Producer)</a></p>
+            <p><a href="http://www.lenine.com.br/" target="_blank">Lenine (Singer)</a></p>
+            <p><a href="http://www.jovemcientista.cnpq.br/" target="_blank">Prêmio Jovem Cientista (Institutional Website)</a></p>
+            <p><a href="https://joaobidu.com.br/" target="_blank">João Bidu (Media Website)</a></p>
         </div>
+
     </div>
 
+    <div class="section section-three">
+        <h2>Contact me</h2>
+        <p><a href="mailto:murillo@murillocamargo.com.br">E-mail</a></p>
+    </div>
 </div>
-<!-- /#footer -->
 
 <script src="assets/vendor/jquery.min.js"></script>
 <script src="assets/vendor/jquery-migrate.min.js"></script>
@@ -58,6 +73,7 @@
 <!-- bower:js -->
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 <!-- endbower -->
+<script src="assets/vendor/fullpage.js"></script>
 <script src="source/scripts/frontend.js"></script>
 <!-- endbuild -->
 </body>

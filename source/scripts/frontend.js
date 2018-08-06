@@ -4,13 +4,18 @@
         this.body = $('body');
 
         //CREATE FUNCTIONS FOR THE SITE
-        var functionName = function () {
-            console.log('Worked!');
+        var fullpageAnimation = function () {
+
+            $('#fullpage').fullpage({
+                sectionsColor: ['#0F2980', '#ffd200', '#c1c1c1'],
+                anchors: ['firstSection', 'secondSection', 'thirdSection'],
+                menu: '.main-nav ul',
+            });
         };
 
         //THEN ADD THEM TO THE RUN FUNCTION
         var run = function () {
-            functionName();
+            fullpageAnimation();
         };
 
         run();
