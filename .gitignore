@@ -4,8 +4,6 @@ node_modules
 bower_components
 .tmp
 /dist
-/assets/css
-/assets/images
 /assets/scripts
 /source/sass/_libs.scss
 /source/sass/_modules.scss
@@ -16,3 +14,4 @@ bower_components
 .sass-cache
 .ftppass
 Gruntconfig.js
+package-lock.json

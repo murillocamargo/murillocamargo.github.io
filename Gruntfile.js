@@ -38,7 +38,7 @@ module.exports = function (grunt) {
             },
             //Don't change this file or it will break Grunt process
             //If you want to delete this file, you will need to add another HTML with comment tags for the build process
-            html: 'page-base.php'
+            html: 'index.html'
         },
 
         usemin: {
