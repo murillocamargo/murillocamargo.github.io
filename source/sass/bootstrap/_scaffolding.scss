@@ -53,6 +53,7 @@ a {
   &:focus {
     color: $link-hover-color;
     text-decoration: $link-hover-decoration;
+    @include transition(all 200ms ease);
   }
 
   &:focus {

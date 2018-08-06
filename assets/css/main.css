@@ -295,8 +295,8 @@ th {
 
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot");
-  src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+  src: url("../fonts/glyphicons-halflings-regular.eot");
+  src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
 }
 
 .glyphicon {
@@ -1379,7 +1379,7 @@ html {
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.428571429;
   color: #333333;
@@ -1396,13 +1396,16 @@ textarea {
 }
 
 a {
-  color: #337ab7;
+  color: #27a6dd;
   text-decoration: none;
 }
 
 a:hover, a:focus {
-  color: #23527c;
+  color: #19769f;
   text-decoration: underline;
+  -webkit-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
 }
 
 a:focus {
@@ -1479,8 +1482,8 @@ hr {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: inherit;
-  font-weight: 500;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 900;
   line-height: 1.1;
   color: inherit;
 }
@@ -1631,12 +1634,12 @@ mark,
 }
 
 .text-primary {
-  color: #337ab7;
+  color: #27a6dd;
 }
 
 a.text-primary:hover,
 a.text-primary:focus {
-  color: #286090;
+  color: #1c87b5;
 }
 
 .text-success {
@@ -1680,12 +1683,12 @@ a.text-danger:focus {
 }
 
 .bg-primary {
-  background-color: #337ab7;
+  background-color: #27a6dd;
 }
 
 a.bg-primary:hover,
 a.bg-primary:focus {
-  background-color: #286090;
+  background-color: #1c87b5;
 }
 
 .bg-success {
@@ -2735,27 +2738,27 @@ fieldset[disabled] .btn-default.focus {
 
 .btn-primary {
   color: #fff;
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  background-color: #27a6dd;
+  border-color: #2097cb;
 }
 
 .btn-primary:focus, .btn-primary.focus {
   color: #fff;
-  background-color: #286090;
-  border-color: #122b40;
+  background-color: #1c87b5;
+  border-color: #0f455c;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #286090;
-  border-color: #204d74;
+  background-color: #1c87b5;
+  border-color: #187096;
 }
 
 .btn-primary:active, .btn-primary.active,
 .open > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #286090;
-  border-color: #204d74;
+  background-color: #1c87b5;
+  border-color: #187096;
 }
 
 .btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:active.focus, .btn-primary.active:hover, .btn-primary.active:focus, .btn-primary.active.focus,
@@ -2763,8 +2766,8 @@ fieldset[disabled] .btn-default.focus {
 .open > .btn-primary.dropdown-toggle:focus,
 .open > .btn-primary.dropdown-toggle.focus {
   color: #fff;
-  background-color: #204d74;
-  border-color: #122b40;
+  background-color: #187096;
+  border-color: #0f455c;
 }
 
 .btn-primary:active, .btn-primary.active,
@@ -2776,12 +2779,12 @@ fieldset[disabled] .btn-default.focus {
 fieldset[disabled] .btn-primary:hover,
 fieldset[disabled] .btn-primary:focus,
 fieldset[disabled] .btn-primary.focus {
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  background-color: #27a6dd;
+  border-color: #2097cb;
 }
 
 .btn-primary .badge {
-  color: #337ab7;
+  color: #27a6dd;
   background-color: #fff;
 }
 
@@ -2994,7 +2997,7 @@ fieldset[disabled] .btn-danger.focus {
 }
 
 .btn-link {
-  color: #337ab7;
+  color: #27a6dd;
   font-weight: normal;
   border-radius: 0;
 }
@@ -3011,7 +3014,7 @@ fieldset[disabled] .btn-link {
 }
 
 .btn-link:hover, .btn-link:focus {
-  color: #23527c;
+  color: #19769f;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -3542,6 +3545,40 @@ body {
 /**
  * This is a dummy file to maintain folder structure on GIT
  */
+.header {
+  width: 100%;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background: #156689;
+  box-shadow: black 0 0 7px;
+}
+
+.main-nav ul {
+  margin: 0 -15px;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-right: -4px;
+  padding: 0 15px;
+}
+
+.main-nav a {
+  display: block;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.main-nav .active a {
+  color: #ffd200;
+}
+
 /* generated with grunt-sass-globbing */
 /*------------------------------------*\
     Styles for: _example.scss
@@ -3551,6 +3588,116 @@ body {
 /**
  * This is a dummy file to maintain folder structure on GIT
  */
+/*------------------------------------------------------*\
+    Styles for: 
+    Created: 06/08/2018
+    By: Murillo Camargo <contato@murillocamargo.com.br>
+\*------------------------------------------------------*/
+/**
+ * Description
+ */
+#fullpage .section.section-one {
+  background-color: #27a6dd;
+}
+
+#fullpage .section.section-one h2,
+#fullpage .section.section-one p {
+  color: #FFF;
+}
+
+#fullpage .section.section-two {
+  background-color: #FFF;
+}
+
+#fullpage .section.section-two h2,
+#fullpage .section.section-two p {
+  color: #27a6dd;
+}
+
+#fullpage .section.section-two p .glyphicon {
+  -webkit-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+  -webkit-transform: translate3d(-10px, 5px, 0);
+  transform: translate3d(-10px, 5px, 0);
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+#fullpage .section.section-two p:hover .glyphicon {
+  -webkit-transform: translate3d(10px, 5px, 0);
+  transform: translate3d(10px, 5px, 0);
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+#fullpage .section.section-three {
+  background-color: #27a6dd;
+}
+
+#fullpage .section.section-three h2,
+#fullpage .section.section-three p {
+  color: #FFF;
+}
+
+#fullpage .section.section-three h2 a,
+#fullpage .section.section-three p a {
+  color: #FFF;
+}
+
+#fullpage .section.section-three span {
+  position: relative;
+  width: 100%;
+  font-size: 2.1428571429em;
+  -webkit-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+#fullpage .section.section-three span:after {
+  content: "murillo@murillocamargo.com.br";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+  font-size: 0.4333333333em;
+  text-align: center;
+  -webkit-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+#fullpage .section.section-three span:hover {
+  -webkit-transform: translate3d(0, 20px, 0);
+  transform: translate3d(0, 20px, 0);
+}
+
+#fullpage .section.section-three span:hover:after {
+  -webkit-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+  -webkit-transform: translate3d(0, 30px, 0);
+  transform: translate3d(0, 30px, 0);
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+/*------------------------------------*\
+   #RESPONSIVE
+\*------------------------------------*/
+/* Desktops & Tablets Landscape */
+/* Tablets Portrait */
+/* Small Screens */
+/* Smartphones Landscape */
+/* Smartphones Portrait */
+/* Very Small Screens */
 /* generated with grunt-sass-globbing */
 /*------------------------------------*\
     Styles for: _example.scss

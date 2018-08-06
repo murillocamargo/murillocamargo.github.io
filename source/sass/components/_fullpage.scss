@@ -1,0 +1,126 @@
+/*------------------------------------------------------*\
+    Styles for: 
+    Created: 06/08/2018
+    By: Murillo Camargo <contato@murillocamargo.com.br>
+\*------------------------------------------------------*/
+
+/**
+ * Description
+ */
+
+#fullpage {
+
+    .section {
+
+        &.section-one {
+            background-color: $brand-primary;
+
+            h2,
+            p {
+                color: #FFF;
+            }
+        }
+
+        &.section-two {
+            background-color: #FFF;
+
+            h2,
+            p {
+                color: $brand-primary;
+            }
+
+            p {
+                .glyphicon {
+                    @include transition(all 200ms ease);
+                    @include translate3d(-10px, 5px, 0);
+                    @include opacity(0);
+                }
+
+                &:hover {
+
+                    .glyphicon {
+                        @include translate3d(10px, 5px, 0);
+                        @include opacity(1);
+                    }
+                }
+            }
+        }
+
+        &.section-three {
+            background-color: $brand-primary;
+
+            h2,
+            p {
+                color: #FFF;
+
+                a {
+                    color: #FFF;
+                }
+            }
+
+            span {
+                position: relative;
+                width: 100%;
+                font-size: em(30px);
+                @include transition(all 200ms ease);
+                @include translate3d(0, 0, 0);
+
+                &:after {
+                    content: "murillo@murillocamargo.com.br";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    font-family: $lato;
+                    font-size: em(13px, 30px);
+                    text-align: center;
+
+                    @include transition(all 200ms ease);
+                    @include translate3d(0, 0, 0);
+                    @include opacity(0);
+                }
+
+                &:hover {
+                    @include translate3d(0, 20px, 0);
+
+                    &:after {
+                        @include transition(all 200ms ease);
+                        @include translate3d(0, 30px, 0);
+                        @include opacity(1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*------------------------------------*\
+   #RESPONSIVE
+\*------------------------------------*/
+
+/* Desktops & Tablets Landscape */
+@media screen and (max-width: 992px) {
+}
+
+/* Tablets Portrait */
+@media (min-width: 768px) and (max-width: 992px) {
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+}
+
+/* Small Screens */
+@media screen and (max-width: 767px) {
+}
+
+/* Smartphones Landscape */
+@media (min-width: 481px) and (max-width: 767px) {
+}
+
+/* Smartphones Portrait */
+@media screen and (max-width: 480px) {
+}
+
+/* Very Small Screens */
+@media screen and (max-width: 320px) {
+}

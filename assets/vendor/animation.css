@@ -94,16 +94,31 @@
 }
 
 .section-two.active .slide-one.active > .fp-tableCell h2 {
+    -webkit-transition-delay: 1s;
+    transition-delay: 1s;
+}
+
+.section-two.active .slide-one.active > .fp-tableCell p:nth-child(2) {
+    -webkit-transition-delay: .88s;
+    transition-delay: .88s;
+}
+
+.section-two.active .slide-one.active > .fp-tableCell p:nth-child(3) {
+    -webkit-transition-delay: .66s;
+    transition-delay: .66s;
+}
+
+.section-two.active .slide-one.active > .fp-tableCell p:nth-child(4) {
     -webkit-transition-delay: .44s;
     transition-delay: .44s;
 }
 
-.section-two.active .slide-one.active > .fp-tableCell p {
+.section-two.active .slide-one.active > .fp-tableCell p:nth-child(5) {
     -webkit-transition-delay: .22s;
     transition-delay: .22s;
 }
 
-.section-two.active .slide-one.active > .fp-tableCell p + p {
+.section-two.active .slide-one.active > .fp-tableCell p:nth-child(6) {
     -webkit-transition-delay: 0s;
     transition-delay: 0s;
 }
